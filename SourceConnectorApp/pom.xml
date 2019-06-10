@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.jaegertracing</groupId>
+    <artifactId>SourceConnectorApp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.3.RELEASE</version>
+    </parent>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-activemq</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-pool</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-spring-boot-starter -->
+		<dependency>
+		    <groupId>org.apache.camel</groupId>
+		    <artifactId>camel-spring-boot-starter</artifactId>
+		    <version>3.0.0-M2</version>
+		</dependency>
+        
+        
+		<!-- https://mvnrepository.com/artifact/org.apache.camel/camel-jms -->
+		<dependency>
+		    <groupId>org.apache.camel</groupId>
+		    <artifactId>camel-jms</artifactId>
+		    <version>3.0.0-M2</version>
+		</dependency>
+
+		 <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-opentracing-starter -->
+		 <dependency>
+		     <groupId>org.apache.camel</groupId>
+		     <artifactId>camel-opentracing-starter</artifactId>
+		     <version>3.0.0-M2</version>
+		 </dependency>
+
+      
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+    		<groupId>org.json</groupId>
+    		<artifactId>json</artifactId>
+    		<version>20180813</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.opentracing.contrib/opentracing-jms-spring -->
+		<dependency>
+		    <groupId>io.opentracing.contrib</groupId>
+		    <artifactId>opentracing-jms-spring</artifactId>
+		    <version>0.1.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.jaegertracing/jaeger-core -->
+		<dependency>
+    		<groupId>io.jaegertracing</groupId>
+    		<artifactId>jaeger-core</artifactId>
+    		<version>0.35.3</version>
+		</dependency>
+		<dependency>
+	    	<groupId>io.jaegertracing</groupId>
+	    	<artifactId>jaeger-thrift</artifactId>
+	    	<version>0.32.0</version>
+		</dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

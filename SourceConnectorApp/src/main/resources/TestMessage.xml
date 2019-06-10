@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tns:getRostersResponse xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://roster_state_output_plain.service.jcms.jeppesen.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="4" source="RosterState" created="2019-02-25T11:05:34Z">
+    <tns:roster crewId="1029" surName="surName" givenName="givenName" homeBase="SDF" start="2018-10-25T17:00:00Z" end="2018-11-02T17:00:00Z">
+        <tns:assignment role="CP">
+            <tns:trip name="847226" dateOfOrigin="2018-10-25" category="" homeBase="SDF" startStation="SDF" endStation="SDF" startTime="2018-10-25T19:45:00Z" endTime="2018-11-01T19:15:00Z" report_time="2018-10-25T18:45:00Z" release_time="2018-11-01T19:45:00Z">
+                <tns:crew role="CP" count="1"/>
+                <tns:crew role="FO" count="1"/>
+                <tns:assignment role="CP">
+                    <tns:leg carrier="JP" dateOfOrigin="2018-10-25" flightNumber="147" startStation="SDF" endStation="ZRH" scheduledStartTime="2018-10-25T19:45:00Z" scheduledEndTime="2018-10-26T04:20:00Z" startTimeOffset="PT-6H" endTimeOffset="PT2H" seqNumber="1" aircraftType="333" operationalStatus="S" scheduleStatus="N"/>
+                </tns:assignment>
+                <tns:assignment role="CP">
+                    <tns:leg carrier="JP" dateOfOrigin="2018-10-27" flightNumber="288" startStation="ZRH" endStation="JNB" scheduledStartTime="2018-10-27T20:40:00Z" scheduledEndTime="2018-10-28T07:10:00Z" startTimeOffset="PT2H" endTimeOffset="PT2H" seqNumber="1" aircraftType="343" operationalStatus="S" scheduleStatus="N"/>
+                </tns:assignment>
+                <tns:assignment role="CP">
+                    <tns:leg carrier="JP" dateOfOrigin="2018-10-29" flightNumber="289" startStation="JNB" endStation="ZRH" scheduledStartTime="2018-10-29T18:20:00Z" scheduledEndTime="2018-10-30T05:10:00Z" startTimeOffset="PT2H" endTimeOffset="PT1H" seqNumber="1" aircraftType="343" operationalStatus="S" scheduleStatus="N"/>
+                </tns:assignment>
+                <tns:assignment role="CP">
+                    <tns:leg carrier="JP" dateOfOrigin="2018-11-01" flightNumber="146" startStation="ZRH" endStation="SDF" scheduledStartTime="2018-11-01T11:35:00Z" scheduledEndTime="2018-11-01T19:15:00Z" startTimeOffset="PT1H" endTimeOffset="PT-6H" seqNumber="1" aircraftType="333" operationalStatus="S" scheduleStatus="N"/>
+                </tns:assignment>
+            </tns:trip>
+        </tns:assignment>
+    </tns:roster>
+</tns:getRostersResponse>
